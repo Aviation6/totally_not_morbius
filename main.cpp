@@ -28,13 +28,12 @@ int main(){
   int hunger = 15;
   int thirst = 15;
   int money = 5;
-  bool morbiusIsLife == true;
+  bool morbiusIsLife = true;
   string location;
-  bool ticket == false;
+  bool tick = false;
   string inv1;
   string inv2;
   string inv3;
-  //vector<string> inventory {}
 
 
   cout << "Do you want a tutorial? yes/anything else \n";
@@ -43,22 +42,27 @@ int main(){
   if (userinput == "yes"){
     cout << "Welcome to Morbius simulator, it's Morbin time, this is a port of a game made in python but now it exists as a program \n";
     cout << "In this game, you must go on an epic quest to watch Morbius, you need to manage thirst and hunger, good luck! \n";
-
+  }
+  while (morbiusIsLife){
   location = "Cinema";
 
   while (location == "Cinema"){
     cout << "Welcome to the Cinema! You can watch Morbius here, if you have a ticket \n";
-    cout << "Choices: You can Try and enter the *cinema* (need a ticket), enter *shop* to buy food, or exit to *street* \n";
+    cout << "Choices: You can Try and enter the *cinema* (need a ticket), enter *shop* to buy food and tickets, or exit to *street* \n";
     cin >> userinput;
     if (userinput == "cinema"){
-      if (ticket == false){
-      cout << "You try and enter the cinema only to be told you need a ticket to enter!"
-
-    if (userinput == "shop"){
-      location = "shop"
-    }
+      if (tick == false){
+        cout << "You need a ticket to enter! \n";
+      }
+      else{
+        cout << "Congratulations! You were able to enter the cinema and watch the film! Type anything and press enter to quit";
+        cin >> userinput;
+        return(0);
+      }
+      }
+      else if(userinput == "shop"){
+        location = "shop";
+      }
     }
     }
   }
-  }
-}
