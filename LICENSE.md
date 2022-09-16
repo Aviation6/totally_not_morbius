@@ -2,7 +2,7 @@
 
 ## Terms
 
-So basically as opposed to licensing everything after one license, it's divided into 3
+So basically as opposed to licensing everything under one license, it's divided into 3
 
 ### Code
 
@@ -12,4 +12,6 @@ The code is licensed under zlib
 
 Any writing unrelated to morbius is under CC-BY 3.0 or later
 
-will finish later
+### Morbius
+
+I don't actually have a license to use Morbius but since this is not monetised it's probably ok. Just bare this in mind when using Morbius
