@@ -63,6 +63,12 @@ int main(){
       else if(userinput == "shop"){
         location = "shop";
       }
+      else if(userinput == "street"){
+        location = "stret";
+      }
+    }
+    while (location == "street"){
+      cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*"
     }
     }
   }
