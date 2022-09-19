@@ -68,7 +68,11 @@ int main(){
       }
     }
     while (location == "street"){
-      cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*"
+      cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*\n";
+
+      if (userinput == "home"){
+        cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast!";
+      }
     }
     }
   }
