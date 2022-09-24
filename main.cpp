@@ -71,8 +71,21 @@ int main(){
       cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*\n";
 
       if (userinput == "home"){
-        cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast!";
+        cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast! \n";
+        cout << "Type anything and press enter to close the program";
+        cin >> userinput;
+        return 0;
       }
+     if (userinput == "workshop"){
+       cout << "You are now at work. Would you like to *work* for 7 money or *leave*? \n";
+       cin >> userinput;
+       while (userinput == "work"){
+         cout << "*work* for money or *leave?*";
+        cin >> userinput;
+        //remember to remove
+        return 0;
+       }
+     }
     }
     }
   }
