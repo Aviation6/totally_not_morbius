@@ -25,6 +25,7 @@ using namespace std;
 
 int main(){
   string userinput;
+  string userinputCloned;
   int hunger = 15;
   int thirst = 15;
   int money = 5;
@@ -80,12 +81,17 @@ int main(){
        cout << "You are now at work. Would you like to *work* for 7 money or *leave*? \n";
        cin >> userinput;
        while (userinput == "work"){
-         cout << "*work* for money or *leave?*";
-        cin >> userinput;
-        //remember to remove
-        return 0;
+        cout << "*work* for money or *leave?*";
+        cin >> userinputCloned;
+        if (userinputCloned == "work"){
+          cout << "You worked and made 7 money! Maybe you can afford a morbius ticket \n";
+        }
        }
      }
+   else if (userinput == "leave"){
+     cout << "You have left the workshop \n";
+     location == "street";
+   }
     }
     }
   }
