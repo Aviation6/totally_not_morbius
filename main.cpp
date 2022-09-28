@@ -77,6 +77,10 @@ int main(){
         cin >> userinput;
         return 0;
       }
+      else if (userinput == "Cinema"){
+        cout << "You have returned to the cinema";
+        location == "cinema";
+      }
      if (userinput == "workshop"){
        cout << "You are now at work. Would you like to *work* for 7 money or *leave*? \n";
        cin >> userinput;
@@ -85,6 +89,10 @@ int main(){
         cin >> userinputCloned;
         if (userinputCloned == "work"){
           cout << "You worked and made 7 money! Maybe you can afford a morbius ticket \n";
+        }
+        else if (userinputCloned == "leave"){
+          cout << "you have left, you are back on the street \n";
+          location == "street";
         }
        }
      }
