@@ -65,19 +65,20 @@ int main(){
         location = "shop";
       }
       else if(userinput == "street"){
-        location = "stret";
+        location = "street";
       }
     }
     while (location == "street"){
       cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*\n";
+      cin >> userinput;
 
       if (userinput == "home"){
         cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast! \n";
-        cout << "Type anything and press enter to close the program";
+        cout << "Please close the window as I don't know how to close the program properly";
         cin >> userinput;
         return 0;
       }
-      else if (userinput == "Cinema"){
+      else if (userinput == "cinema"){
         cout << "You have returned to the cinema";
         location == "cinema";
       }
