@@ -32,9 +32,9 @@ int main(){
   bool morbiusIsLife = true;
   string location;
   bool tick = false;
-  string inv1;
-  string inv2;
-  string inv3;
+  string inv1 = "NaN";
+  string inv2 = "NaN";
+  string inv3 = "NaN";
 
 
   cout << "Do you want a tutorial? yes/anything else \n";
@@ -66,6 +66,19 @@ int main(){
       }
       else if(userinput == "street"){
         location = "street";
+      }
+
+      while (location == "shop"){
+        cout << "The shop keeper is a middle adged man with a bright orange beard and a cartoonly smug grin on his mouth \n . He asks you 'what ya buying? You can buy overpriced *popcorn*, movie *ticket* or movie *water' \n";
+        cin >> userinput;
+        if (userinput == "popcorn"){
+          if (money => 5){
+            if (inv1 = "NaN"){
+              inv1 = "popcorn";
+              cout << "You obtained popcorn! \n"
+            }
+          }
+        }
       }
     }
     while (location == "street"){
