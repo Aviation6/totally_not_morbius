@@ -14,4 +14,4 @@ Any writing unrelated to morbius is under CC-BY 3.0 or later
 
 ### Morbius
 
-I don't actually have a license to use Morbius but since this is not monetised it's probably ok. Just bare this in mind when using Morbius
+I don't actually have a license to use Morbius but since this is not monetised it's probably ok and falls under fair use. Just bare this in mind when using Morbius
