@@ -69,7 +69,7 @@ int main(){
       }
 
       while (location == "shop"){
-        cout << "The shop keeper is a middle adged man with a bright orange beard and a cartoonly smug grin on his mouth \n . He asks you 'what ya buying? You can buy overpriced *popcorn*, movie *ticket* or movie *water' \n";
+        cout << "The shop keeper is a middle adged man with a bright orange beard and a cartoonly smug grin on his mouth \n . He asks you 'what ya buying? You can buy overpriced *popcorn*, movie *ticket* or movie *water*' \n";
         cin >> userinput;
         if (userinput == "popcorn"){
           if (money >= 5){
@@ -77,10 +77,47 @@ int main(){
               inv1 = "popcorn";
               cout << "You obtained popcorn! \n";
             }
+            else if (inv2 == "NaN"){
+              inv2 = "popcorn";
+              cout << "You obtained popcorn! \n";
+            }
+            else if (inv3 == "NaN"){
+              inv3 = "popcorn";
+              cout << "You obtained popcorn! \n";
+            }
+            else{
+              cout << "You have no free space in your inventory! \n";
+            }
+          }
+          else{
+            cout << "You don't have enough money!";
           }
         }
-      }
+        else if (userinput == "water"){
+          if (money >= 3){
+            if (inv1 == "NaN"){
+              inv1 = "water";
+              cout << "You obtained water! \n";
+            }
+            else if (inv2 == "NaN"){
+              inv2 = "water";
+              cout << "You obtained water! \n";
+            }
+            else if (inv3 == "NaN"){
+              inv3 = "water";
+              cout << "You obtained water! \n";
+            }
+            else{
+              cout << "You have no free space in your inventory! \n";
+            }
+          }
+          else{
+            cout << "You don't have enough money!";
+          }
+        }
     }
+  }
+
     while (location == "street"){
       cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*\n";
       cin >> userinput;
@@ -116,4 +153,4 @@ int main(){
    }
     }
     }
-  }
+    }
