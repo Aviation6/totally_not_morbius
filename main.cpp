@@ -72,10 +72,10 @@ int main(){
         cout << "The shop keeper is a middle adged man with a bright orange beard and a cartoonly smug grin on his mouth \n . He asks you 'what ya buying? You can buy overpriced *popcorn*, movie *ticket* or movie *water' \n";
         cin >> userinput;
         if (userinput == "popcorn"){
-          if (money => 5){
-            if (inv1 = "NaN"){
+          if (money >= 5){
+            if (inv1 == "NaN"){
               inv1 = "popcorn";
-              cout << "You obtained popcorn! \n"
+              cout << "You obtained popcorn! \n";
             }
           }
         }
