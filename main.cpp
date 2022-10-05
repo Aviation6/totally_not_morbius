@@ -76,14 +76,17 @@ int main(){
             if (inv1 == "NaN"){
               inv1 = "popcorn";
               cout << "You obtained popcorn! \n";
+              money -= 5;
             }
             else if (inv2 == "NaN"){
               inv2 = "popcorn";
               cout << "You obtained popcorn! \n";
+              money -= 5;
             }
             else if (inv3 == "NaN"){
               inv3 = "popcorn";
               cout << "You obtained popcorn! \n";
+              money -= 5;
             }
             else{
               cout << "You have no free space in your inventory! \n";
@@ -98,22 +101,40 @@ int main(){
             if (inv1 == "NaN"){
               inv1 = "water";
               cout << "You obtained water! \n";
+              money -= 3;
             }
             else if (inv2 == "NaN"){
               inv2 = "water";
               cout << "You obtained water! \n";
+              money -= 3;
             }
             else if (inv3 == "NaN"){
               inv3 = "water";
               cout << "You obtained water! \n";
+              money -= 3;
             }
             else{
               cout << "You have no free space in your inventory! \n";
             }
           }
           else{
-            cout << "You don't have enough money!";
+            cout << "You don't have enough money! \n";
           }
+        }
+        else if (userinput == "ticket"){
+          if (tick == false){
+            if (money >= 15){
+              cout << "You have bought a ticket! \n";
+              tick == true;
+              money -= 15;
+            }
+            else {
+              cout << "Not enough money! ): \n";
+            }
+          }
+        else{
+          cout << "You already have a ticket! \n";
+        }
         }
     }
   }
