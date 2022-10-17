@@ -125,14 +125,14 @@ int main(){
           if (tick == false){
             if (money >= 15){
               cout << "You have bought a ticket! \n";
-              tick == true;
+              tick = true;
               money -= 15;
             }
             else {
               cout << "Not enough money! ): \n";
             }
           }
-        else{
+          else{
           cout << "You already have a ticket! \n";
         }
         }
@@ -145,15 +145,15 @@ int main(){
 
       if (userinput == "home"){
         cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast! \n";
-        cout << "Please close the window as I don't know how to close the program properly";
+        cout << "Please close the window as I don't know how to exit the program properly";
         cin >> userinput;
         return 0;
       }
       else if (userinput == "cinema"){
         cout << "You have returned to the cinema";
-        location == "cinema";
+        location = "cinema";
       }
-     if (userinput == "workshop"){
+    if (userinput == "workshop"){
        cout << "You are now at work. Would you like to *work* for 7 money or *leave*? \n";
        cin >> userinput;
        while (userinput == "work"){
@@ -164,14 +164,14 @@ int main(){
         }
         else if (userinputCloned == "leave"){
           cout << "you have left, you are back on the street \n";
-          location == "street";
+          location = "street";
         }
        }
      }
-   else if (userinput == "leave"){
+    else if (userinput == "leave"){
      cout << "You have left the workshop \n";
-     location == "street";
-   }
+     location = "street";
+    }
     }
     }
     }
