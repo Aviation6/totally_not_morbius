@@ -5,10 +5,12 @@
 #include <vector>
 using namespace std;
 
-/*void hunger_system(hunger){
+/* void hunger_system(){
+  int hunger = 15;
   hunger -= 1;
   if (hunger <= 10){
-    cout << "You are getting hungry"}
+    cout << "You are getting hungry";
+    }
   else if (hunger <= 7 and "popcorn"){
     cout << "You were hungry so you ate popcorn";
     hunger = 15;
@@ -17,9 +19,9 @@ using namespace std;
     cout << "You are about to starve to death";
   }
   else if (hunger == 0){
-    cout << "You have starved to death!"
+    cout << "You have starved to death!";
   }
-}*/
+} */
 
 
 
@@ -61,10 +63,10 @@ int main(){
         return(0);
       }
       }
-      else if(userinput == "shop"){
+    else if(userinput == "shop"){
         location = "shop";
       }
-      else if(userinput == "street"){
+    else if(userinput == "street"){
         location = "street";
       }
 
@@ -140,7 +142,7 @@ int main(){
   }
 
     while (location == "street"){
-      cout << "Welcome to the street, you can head *home*, enter the *cinema* or go to the *workshop*\n";
+      cout << "Welcome to the street, you can head *home*, enter the *cinema*, go to the *workshop* or visit the *piracy* store \n";
       cin >> userinput;
 
       if (userinput == "home"){
@@ -172,6 +174,35 @@ int main(){
      cout << "You have left the workshop \n";
      location = "street";
     }
+    else if (userinput == "piracy"){
+      cout << "Welcome to the piracy store, they seem to sell morbius here, the legality is questionable \n";
+      cout << "The mysterious induvidual behind the counter says they will give you morbius for free!";
+
+      cout << "Will you take the free copy of morbius? *yes*/*no*";
+      cin >> userinput;
+
+      if (userinput == "yes"){
+        if (inv1 == "NaN"){
+          cout << "You go the DVD";
+          inv1 = "PiratedDVD";
+        }
+        else if (inv2 == "NaN"){
+          cout << "You go the DVD";
+          inv2 = "PiratedDVD";
+        }
+        else if (inv3 == "NaN"){
+          cout << "You go the DVD";
+          inv3 = "PiratedDVD";
+        }
+        else{
+          cout << "You have no free space in your inventory! \n";
+        }   
+    }
+      else if (userinput == "no"){
+        cout << "The person looks at you and tells you to get out \n";
+        location = "street";
+      }
     }
     }
     }
+}
