@@ -3,6 +3,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unistd.h>
+//programming this on Linux so windows.h library not avaliable
+//#include <windows.h>
 using namespace std;
 
 /* void hunger_system(){
@@ -58,9 +61,11 @@ int main(){
         cout << "You need a ticket to enter! \n";
       }
       else{
-        cout << "Congratulations! You were able to enter the cinema and watch the film! Type anything and press enter to quit";
-        cin >> userinput;
-        return(0);
+        cout << "Congratulations! You were able to enter the cinema and watch the film! \n";
+        cout << "You realise about half way through however that this film sucks and you're not sure why you spent so much time on it, but oh well... \n";
+        cout << "Please close this window to restart";
+        sleep(2);
+        return 0;
       }
       }
     else if(userinput == "shop"){
@@ -146,10 +151,37 @@ int main(){
       cin >> userinput;
 
       if (userinput == "home"){
+        if (inv1 == "PiratedDVD"){
+          cout << "You head home to watch your new 'legally' obtained copy of morbius when suddenly MI5 burst in through the front door and tell you off, nothing else really happens but you get a pretty stern warning \n";
+          cout << "You decided to watch the film anyway to find out it doesn't work and now you're missing your front door \n";
+          cout << "You got the Pirated Morbius Ending! \n";
+          cout << "Please close this window to restart";
+          sleep(2);
+          return 0;
+        }
+        else if (inv2 == "PiratedDVD"){
+          cout << "You head home to watch your new 'legally' obtained copy of morbius when suddenly MI5 burst in through the front door and tell you off, nothing else really happens but you get a pretty stern warning \n";
+          cout << "You decided to watch the film anyway to find out it doesn't work and now you're missing your front door \n";
+          cout << "You got the Pirated Morbius Ending! \n";
+          cout << "Please close this window to restart";
+          sleep(2);
+          return 0;
+        }
+        else if (inv3 == "PiratedDVD"){
+          cout << "You head home to watch your new 'legally' obtained copy of morbius when suddenly MI5 burst in through the front door and tell you off, nothing else really happens but you get a pretty stern warning \n";
+          cout << "You decided to watch the film anyway to find out it doesn't work and now you're missing your front door \n";
+          cout << "You got the Pirated Morbius Ending! \n";
+          cout << "Please close this window to restart";
+          sleep(2);
+          return 0;
+        }
+        else{
         cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast! \n";
-        cout << "Please close the window as I don't know how to exit the program properly";
-        cin >> userinput;
+        cout << "You got the Morbline ending! \n";
+        cout << "Please close this window to restart";
+        sleep(2);
         return 0;
+        }
       }
       else if (userinput == "cinema"){
         cout << "You have returned to the cinema";
@@ -195,7 +227,7 @@ int main(){
           inv3 = "PiratedDVD";
         }
         else{
-          cout << "You have no free space in your inventory! \n";
+          cout << "You have no free space in your inventory! You'll need to head home to watch it though \n";
         }   
     }
       else if (userinput == "no"){
