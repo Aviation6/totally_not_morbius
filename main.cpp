@@ -176,7 +176,7 @@ int main(){
           return 0;
         }
         else{
-        cout << "You head home only to find a copy of Morbline Miami already sitting there! You decide to give it a whirl and end up having a blast! \n";
+        cout << "You head home only to find a copy of Morbline Morbami already sitting there! You decide to give it a whirl and end up having a blast! \n";
         cout << "You got the Morbline ending! \n";
         cout << "Please close this window to restart";
         sleep(2);
@@ -215,15 +215,15 @@ int main(){
 
       if (userinput == "yes"){
         if (inv1 == "NaN"){
-          cout << "You go the DVD";
+          cout << "You got the DVD";
           inv1 = "PiratedDVD";
         }
         else if (inv2 == "NaN"){
-          cout << "You go the DVD";
+          cout << "You got the DVD";
           inv2 = "PiratedDVD";
         }
         else if (inv3 == "NaN"){
-          cout << "You go the DVD";
+          cout << "You got the DVD";
           inv3 = "PiratedDVD";
         }
         else{
