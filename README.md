@@ -1,4 +1,4 @@
-# Unmorbed Morbius
+# Totally_Not_Morbius
 
-## Unmorbed Morbius is a branch of totally_not_morbius which exists so I don't get in trouble for adding this as a game on itch.io
-## It will always remain open source and with the exception of Morbius, the license is exactly the same
+### Le funni game, ported from pythoThat Han to C++, I don't know C++ to well so this is basically a learning experience
+### I do hope you enjoy this game, you will be able to download a varation on itch.io soon
