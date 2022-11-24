@@ -1,4 +1,4 @@
-# totally_not_morbius
-this is a port of a shoddy game I made in python to C++, problem... I don't know how to code in C++ very well
+# Unmorbed Morbius
 
-Why the heck did I make this public... Please don't try and edit anything
+## Unmorbed Morbius is a branch of totally_not_morbius which exists so I don't get in trouble for adding this as a game on itch.io
+## It will always remain open source and with the exception of Morbius, the license is exactly the same
