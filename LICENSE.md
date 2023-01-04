@@ -2,7 +2,7 @@
 
 ## Terms
 
-So basically as opposed to licensing everything under one license, it's divided into 3
+This program is divided into 3 seperate licenses (2 for the unmorbed branch)
 
 ### Code
 

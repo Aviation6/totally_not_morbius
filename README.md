@@ -1,4 +1,4 @@
-# totally_not_morbius
-this is a port of a shoddy game I made in python to C++, problem... I don't know how to code in C++ very well
+# Totally_Not_Morbius
 
-Why the heck did I make this public... Please don't try and edit anything
+### Le funni game, ported from python to C++, I don't know C++ to well so this is basically a learning experience
+### I do hope you enjoy this game, you will be able to download a varation on itch.io soon
