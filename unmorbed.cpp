@@ -1,4 +1,4 @@
-//how I am going to do the inventory, variables. Ok capiche?
+ //how I am going to do the inventory, variables. Ok capiche?
 
 #include <iostream>
 #include <string>
@@ -237,4 +237,4 @@ int main() {
             }
         }
     }
-}
+
